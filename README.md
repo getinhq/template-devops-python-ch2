@@ -1,8 +1,12 @@
 # Web scraper to CSV
 
 ## Task
-Use `requests` and `beautifulsoup4` to scrape a page and write post titles to CSV.
+Use `requests` and `beautifulsoup4` to scrape a page and write post titles to `out.csv`.
+
+## Starter (not finished)
+`scrape_titles()` returns an empty list and `run()` is not implemented. Tests expect real parsing from HTML fixtures.
 
 ## Your work
-- Implement `scraper.py` with function `scrape_titles(html: str) -> list[str]` and CLI or `run()` that writes `out.csv`.
-- Tests mock HTTP; do not rely on a live blog in CI.
+- Implement parsing in `scraper.py`
+- Implement `run()` to write CSV
+- Do not rely on live sites in CI — use fixtures under `tests/fixtures/`
